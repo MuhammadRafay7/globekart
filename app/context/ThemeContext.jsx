@@ -8,7 +8,7 @@ export function ThemeProvider({ children }) {
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
-        const stored = localStorage.getItem('gocart-theme')
+        const stored = localStorage.getItem('globekart-theme')
         const preferred = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
         setTheme(preferred)
         document.documentElement.classList.toggle('dark', preferred === 'dark')
@@ -18,7 +18,7 @@ export function ThemeProvider({ children }) {
     const toggleTheme = () => {
         const next = theme === 'light' ? 'dark' : 'light'
         setTheme(next)
-        localStorage.setItem('gocart-theme', next)
+        localStorage.setItem('globekart-theme', next)
         document.documentElement.classList.toggle('dark', next === 'dark')
     }
 

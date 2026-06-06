@@ -7,8 +7,8 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export const metadata = {
-    title: "GoCart. - Shop smarter",
-    description: "GoCart. - Shop smarter",
+    title: "GlobeKart. - Shop smarter",
+    description: "GlobeKart. - Shop smarter",
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
                     __html: `
                         (function() {
                             try {
-                                var t = localStorage.getItem('gocart-theme');
+                                var t = localStorage.getItem('globekart-theme');
                                 if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
                                 if (t === 'dark') document.documentElement.classList.add('dark');
                             } catch(e) {}

@@ -34,7 +34,7 @@ const Footer = () => {
             title: "CONTACT",
             links: [
                 { text: "+1-212-456-7890", path: '/contact', icon: PhoneIcon },
-                { text: "contact@gocart.com", path: '/contact', icon: MailIcon },
+                { text: "contact@globekart.com", path: '/contact', icon: MailIcon },
                 { text: "794 Francisco, CA 94102", path: '/contact', icon: MapPinIcon }
             ]
         }

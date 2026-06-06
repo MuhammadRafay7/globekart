@@ -14,7 +14,7 @@ const contactInfo = [
     {
         icon: Mail,
         title: 'Email',
-        detail: 'support@gocart.com',
+        detail: 'support@globekart.com',
         sub: 'We reply within 24 hours',
         color: '#A684FF',
     },

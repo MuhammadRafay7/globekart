@@ -80,7 +80,7 @@ const faqs = [
     { q: 'Is there a free trial for paid plans?', a: 'Absolutely. All paid plans come with a 14-day free trial. No credit card required to start.' },
     { q: 'What payment methods do you accept?', a: 'We accept all major credit cards, PayPal, and bank transfers. All payments are secured with SSL encryption.' },
     { q: 'Can I cancel my subscription?', a: 'Yes, you can cancel anytime. You\'ll retain access until the end of your billing period with no hidden fees.' },
-    { q: 'Do you offer team or business plans?', a: 'Yes! Contact our sales team at sales@gocart.com to discuss custom enterprise pricing.' },
+    { q: 'Do you offer team or business plans?', a: 'Yes! Contact our sales team at sales@globekart.com to discuss custom enterprise pricing.' },
 ]
 
 export default function PricingPage() {
