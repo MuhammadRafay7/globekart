@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    @keyframes marqueeScroll {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(16px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideInRight {
+        from { opacity: 0; transform: translateX(100%); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    .animate-fade-in-up {
+        animation: fadeInUp 0.4s ease both;
+    }
+    .animate-slide-in-right {
+        animation: slideInRight 0.3s ease both;
+    }
+}
+
+@layer base {
+    button {
+        cursor: pointer;
+    }
+    :root {
+        color-scheme: light;
+    }
+    .dark {
+        color-scheme: dark;
+    }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
